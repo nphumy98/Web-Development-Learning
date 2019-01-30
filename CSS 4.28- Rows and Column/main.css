@@ -1,0 +1,135 @@
+
+body {
+/*
+    background-image: url(zebra.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+*/
+    background-color: #444;
+/*    text-align: center;*/
+}
+
+
+
+h1 {
+    color: #ffffff;
+    line-height: 2rem;
+/*    main font is Macondo, 2 reserved fonts are serif and sans-serif, in case browser cant recognise Macondo font*/
+    font-family:'Macondo', serif, sans-serif;
+}
+
+h2 {
+    color: #ffffff;
+    line-height: 2rem;
+    font-family: 'Open+Sans+Condensed:300', serif, sans-serif;
+}
+
+h3 {
+    color: #ffffff;
+    line-height: 2rem;
+    font-family: 'Spirax', serif, sans-serif;
+}
+
+.formatting {
+    font-size: 25px;
+    line-height:2em;
+    color:white;
+}
+
+a {
+    text-decoration: none;
+    font-size:20px;
+    color:yellow;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+img {
+/*    make image automatically shrink and extended if you shrink or extend browser*/
+    max-width:100%;
+    height:auto;
+    padding: 5px;
+/*    make image transparent 50%*/
+    opacity:1;
+/*    margin-bottom: 60px;*/
+    margin: auto;
+    display: block;
+    
+}
+
+.borderImg {
+/*    shave 10 px corner of image , mage image corner round
+    border-radius: 10px;*/
+/*
+    Make image circle
+    border-radius: 50%;
+    width:500px;
+    height:500px;
+*/
+/*    make thumbnail image*/
+    border-radius: 10px;
+    width:200px;
+    height:200px;
+    border: 2px solid #ddd;
+    padding: 5px;
+}
+
+button {
+    color:white;
+    background: red;
+    border-radius: 12px;
+    border:none;
+    font-size:25px;
+/*    padding go clockwise top right bottom left*/
+    padding: 10px 20px 40px 60px;
+}
+
+/*descendant: every single list item that in unorderlist*/
+
+ul li {
+    color:blue;
+    font-size:20px;
+}
+
+/*child selector: Any list item that is child of unorderlist , but only 1 level deep*/
+ul > li {
+    color:yellow;
+}
+
+
+.row {
+    display:flex;
+    width: 100%;
+}
+
+/*everytime row created , this gonna happen. it is like trigger*/
+.row::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+/*we create grid system with total column of 12*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/*grapping every single element good padding and margin*/
+* {
+    box-sizing: : border-box;
+}
+
+[class*="col-"] {
+    border: 2px solid red;
+    padding: 15px;
+    float:left;
+}

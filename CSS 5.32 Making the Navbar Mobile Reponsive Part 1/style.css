@@ -1,0 +1,71 @@
+/*#####Defaults######*/
+nav,
+header,
+footer {
+/*    we want to take nav, header, footer elements to display as block*/
+    display:block;
+}
+
+body {
+    line-height: 1;
+    margin:0;
+}
+
+/*#####Nav bar#####*/
+nav {
+    width:100%;
+    margin:0;
+}
+
+nav ul {
+    background-color: #eee;
+/*    user do not have to scroll over to see photo if it is too big and website shrink*/
+    overflow: hidden; 
+    margin:0;
+    padding:0;
+}
+
+ul.topnav li{
+/*    make sure list no bullet point inserted*/
+    list-style: none;
+    float:left;
+}
+
+ul.topnav li.topnav-right{
+    float:right;
+}
+
+ul.topnav li a {
+    display: block;
+/*    get rid of underline in nav bar text*/
+    text-decoration:none;
+/*    as browser shrink, the minimum height is 16px*/
+    min-height:16px;
+    text-align: center;
+    padding:14px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+/*make navbar text hover when u click*/
+ul.topnav li a:hover {
+/*    color background you hover on the text*/
+    background-color: #0080ff;
+    /*    color text you hover on the text*/
+    color:white;   
+}
+
+ul.topnav li.dropdownIcon {
+/*    not display icon hamberger on desktop*/
+    display:none;
+}
+
+
+/*#### Mobile ######*/
+/*detect screen mobile*/
+@media screen and (max-width:600px) {
+/*    if the screen width is 600px , all ul disappear, except the child 1 (use not selector command)*/
+    ul.topnav li:not(:nth-child(1)) {
+        display:none;
+    }
+}

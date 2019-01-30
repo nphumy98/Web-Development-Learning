@@ -1,0 +1,78 @@
+body {
+    background-image: url(zebra.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    
+}
+
+/*
+html h1 {
+    color:red;
+}
+
+body h1 {
+    color:green;
+}
+*/
+
+
+
+/*
+#foo {
+    color:red;
+}
+*/
+
+
+/*very specific one can not still win direct style attribute*/
+
+html body div .container h1 #foo {
+    color:red;
+}
+
+/*attribute selector. more than element but still less than ID*/
+[id="foo"] {
+    color:cyan;
+}
+
+
+.container h1 {
+    color:red;
+}
+
+div h1 {
+    color:green;
+}
+/* use important rule will dominate and overidde anything. Not recommend use it*/
+/*
+h1 {
+    color: green !important;
+}
+*/
+
+h1,h2,h3 {
+    color: #ffffff;
+    text-shadow: 2px 2px 5px black;
+    line-height: 1rem;
+    font-family: sans-serif;
+}
+
+
+.borderImg {
+    border: 10px dashed red;
+}
+
+/*descendant: every single list item that in unorderlist*/
+
+ul li {
+    color:blue;
+    font-size:20px;
+}
+
+/*child selector: Any list item that is child of unorderlist , but only 1 level deep*/
+ul > li {
+    color:yellow;
+}
