@@ -1,0 +1,186 @@
+/*#####Defaults######*/
+nav,
+header,
+footer {
+/*    we want to take nav, header, footer elements to display as block*/
+    display:block;
+}
+
+body {
+    line-height: 1;
+    margin:0;
+}
+
+.container {
+    width: 100%;
+    margin:auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+/*GRID SYSTEM for class row*/
+.row {
+    width: 100%;
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+}
+
+.row::after {
+    display:table;
+    clear:both;
+    content:"";
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/*#####Nav bar#####*/
+nav {
+    width:100%;
+    margin:0;
+}
+
+nav ul {
+    background-color: #eee;
+/*    user do not have to scroll over to see photo if it is too big and website shrink*/
+    overflow: hidden; 
+    margin:0;
+    padding:0;
+}
+
+ul.topnav li{
+/*    make sure list no bullet point inserted*/
+    list-style: none;
+    float:left;
+}
+
+ul.topnav li.topnav-right{
+    float:right;
+}
+
+ul.topnav li a {
+    display: block;
+/*    get rid of underline in nav bar text*/
+    text-decoration:none;
+/*    as browser shrink, the minimum height is 16px*/
+    min-height:16px;
+    text-align: center;
+    padding:14px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+/*make navbar text hover when u click*/
+ul.topnav li a:hover {
+/*    color background you hover on the text*/
+    background-color: #0080ff;
+    /*    color text you hover on the text*/
+    color:white;   
+}
+
+ul.topnav li.dropdownIcon {
+/*    not display icon hamberger on desktop*/
+    display:none;
+}
+
+/*#########Custom styles ##############*/
+#section-1-gradient {
+    background-image: linear-gradient(#076DFF, #65a5ff);
+}
+
+div.leftSide-col {
+    margin-left: 30%;
+}
+
+div.rightSide-col {
+    margin-left:15%;
+}
+
+h1.large {
+    color: #fff;
+    font-size:56px;
+    margin:0;
+    line-height: 70px;
+}
+
+form h2 {
+    color: #fff;
+}
+
+input[type="text"]{
+    font-size: 20px;
+    width:400px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+/*#### Mobile ######*/
+/*detect screen mobile*/
+@media screen and (max-width:600px) {
+/*    if the screen width is 600px , all ul disappear, except the child 1 (use not selector command)*/
+    ul.topnav li:not(:nth-child(1)) {
+        display:none;
+    }
+    
+/*    display the hamberger icon*/
+    ul.topnav li.dropdownIcon {
+        display:block;
+        float:right;
+    }
+
+/*    make the humberger icon stay in absolute position, not change anywhere, the position is in the top right corner*/
+    ul.topnav.reponsive li.dropdownIcon {
+        position:absolute;
+        top:0;
+        right:0;
+    }
+/*    reponsive topnav to javascript*/
+    ul.topnav.reponsive {
+        position:relative;
+    }
+    
+    ul.topnav.reponsive li {
+/*        make sure all list item list in a row*/
+        display:inline;
+/*        disable float left before we set up*/
+        float:none;
+    }
+    
+    ul.topnav.reponsive li a {
+        display:block;
+        text-align:left;
+    }
+    
+    .col-6 {
+        width:100%;
+        margin:0;
+    }
+    
+    div.leftSide-col, 
+    div.rightSide-col {
+        margin:15px;
+    }
+/*     make the input box width, it overwrite the width of input[type=text] above*/
+    input [type="text"] {
+        width:350px;
+    }
+    
+    .videoContainer iframe{
+        position: relative;
+        width: 100%;
+        margin:0;
+        overflow: hidden;
+/*         ??*/
+    }
+}
