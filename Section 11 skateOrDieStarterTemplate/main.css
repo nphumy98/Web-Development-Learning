@@ -1,0 +1,10 @@
+.jumbotron {
+    text-align: center;
+    background: none;
+/*    why no longer need display block , text align still work*/
+}
+
+.sectionLight {
+    background-color: #eceeef;
+    padding: 2em;
+}
