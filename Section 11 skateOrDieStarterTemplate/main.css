@@ -8,3 +8,20 @@
     background-color: #eceeef;
     padding: 2em;
 }
+
+.sectionDark {
+    background-color: #cccccc;
+    padding: 2rem;
+}
+
+.coolStuffWrapper {
+    margin-top: 20px;
+}
+
+button.coolStuffBtn {
+    background-color: red;
+    color: #ffffff;
+/*    to make the button center, display block and set margin to auto*/
+    display: block;
+    margin: auto;
+}
