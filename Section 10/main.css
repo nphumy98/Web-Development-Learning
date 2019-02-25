@@ -18,7 +18,8 @@ img.signin-img {
     padding: 0 2rem 2rem;
     margin: auto;
     display: block;
-    width: 70%;
+/*    if you resize pixel of photo properly, the photo look much better without changing width*/
+/*    width: 50%;*/
 }
 
 form.signin-form {
