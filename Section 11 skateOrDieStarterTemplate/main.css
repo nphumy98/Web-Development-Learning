@@ -28,10 +28,24 @@ button.coolStuffBtn {
 
 h5.modal-title {
 /*    set margin auto make the content center*/
-    margin: auto;
     display: block;
+     margin: auto;
 }
 
 .modalFormWrapper {
     padding: 2rem;
+}
+
+.imgCenter {
+    display: block;
+    margin:auto;
+    
+}
+
+.btnCenter {
+    display:block;
+    margin:auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 70%;
 }
