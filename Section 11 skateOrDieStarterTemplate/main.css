@@ -21,7 +21,17 @@
 button.coolStuffBtn {
     background-color: red;
     color: #ffffff;
-/*    to make the button center, display block and set margin to auto*/
+    /*    to make the button center, display block and set margin to auto*/
     display: block;
+    margin:auto;
+}
+
+h5.modal-title {
+/*    set margin auto make the content center*/
     margin: auto;
+    display: block;
+}
+
+.modalFormWrapper {
+    padding: 2rem;
 }
