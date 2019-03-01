@@ -207,6 +207,22 @@ blurb-wrapper-left {
 /*        make the text Project center at mobile state*/
         text-align: center;
     }
+    
+    .media-object {
+        text-align: center;
+        flex-direction: column;
+    }
+    
+    .icon-right,
+    .icon-left {
+        order:1;
+    }
+    
+    .blurb-wrapper-left,
+    .blurb-wrapper-right {
+        order:2;
+        padding: 2rem;
+    }
 
 }
 
