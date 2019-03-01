@@ -124,6 +124,22 @@ blurb-wrapper-left {
     width: 180px;
 }
 
+.quote-btn-wrapper {
+    display:flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.quote-btn {
+    color: #FFFFFF;
+    background-color: #66B6D3;
+    font-size: 18px;
+    border: none;
+    padding: .8rem 4rem;
+    border-radius: 3px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.3);
+}
+
 @media (max-width: 768px) {
    ul.topnav li a.nav-link {
         display: none;
