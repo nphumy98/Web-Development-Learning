@@ -140,6 +140,29 @@ blurb-wrapper-left {
     box-shadow: 0 5px 20px rgba(0,0,0,.3);
 }
 
+.section-header {
+    text-align: center;
+    padding: 6rem 0 4rem;
+}
+
+.profolio-wrapper {
+    display:flex;
+    max-width: 250px;
+}
+
+.porfolio-box {
+    width: 250px;
+    height: 250px;
+    background-color: #F1F3Fa;
+    transition: .2s ease-in-out;
+}
+
+/*everytime click on the box, it scale*/
+.porfolio-box:hover {
+    cursor:pointer;
+    transform: scale(1.02);
+}
+
 @media (max-width: 768px) {
    ul.topnav li a.nav-link {
         display: none;
