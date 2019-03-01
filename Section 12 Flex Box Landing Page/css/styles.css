@@ -249,6 +249,15 @@ form label {
         order:2;
         padding: 2rem;
     }
+    
+    .form-group {
+/*when we add display flex, all the children will have size of parent element. the form-group has right size however form-control is too big. display flex in mobile mode make form-control small and fit to mobile screen        */
+        display:flex;
+    }
+    
+    .submit-btn-wrapper {
+        text-align: center;
+    }
 
 }
 
