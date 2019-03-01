@@ -11,13 +11,13 @@ html, body {
 
 
 .navbar, .container {
-    display:flex;
     max-width: 1140px;
     width:100%;
     margin: 0 auto;
 }
 
 .navbar {
+    display:flex;
     padding: 10px;
     justify-content: space-between;
 }
@@ -84,15 +84,29 @@ header {
 
 .media-object {
     display: flex;
+    align-items: center;
+    padding: 4rem 1rem;
 }
 
-.icon-wrapper {
+.icon-left,
+.icon-right {
     flex:1;
     display:flex;
     justify-content: center;
 }
 
-.blurb-wrapper {
+.icon-left,
+blurb-wrapper-left {
+    order:1;
+}
+
+.icon-right,
+.blurb-wrapper-right {
+    order:2;
+}
+
+.blurb-wrapper-right,
+.blurb-wrapper-left {
     flex:1;
 }
 
