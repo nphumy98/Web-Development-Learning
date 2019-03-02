@@ -137,6 +137,58 @@ body {
   width: 100%;
   padding: 30px 0 40px; }
 
+.btn {
+  display: inline-block;
+  font-weight: normal;
+  line-height: 1.25;
+  text-align: center;
+  font-size: 1rem;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  transition: all, 0.2s ease-in-out;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 10px; }
+
+.buy-btn-lg {
+  padding: 12px 35px;
+  font-size: 1.25rem;
+  border-radius: 30px;
+  width: 100%; }
+
+.buy-btn-md {
+  padding: 18px 50px;
+  font-size: 1rem;
+  border-radius: 30px; }
+
+.btn-dark {
+  color: #F6F5F5;
+  background-color: #7a88a3;
+  border-color: #212630; }
+  .btn-dark:hover {
+    color: #F6F5F5;
+    background-color: #0c0e12;
+    border-color: #0c0e12; }
+
+.btn-primary {
+  color: #F6F5F5;
+  background-color: #CD493B;
+  border-color: #CD493B; }
+  .btn-primary:hover {
+    color: #F6F5F5;
+    background-color: #aa372b;
+    border-color: #aa372b; }
+
+.btn-third {
+  color: #F6F5F5;
+  background-color: #CD4B3C;
+  border-color: #CD4B3C; }
+  .btn-third:hover {
+    color: #F6F5F5;
+    background-color: #aa392c;
+    border-color: #aa392c; }
+
 .img-list {
   margin: 0 -20px -40px;
   padding: 0; }
